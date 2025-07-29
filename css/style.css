@@ -1,0 +1,214 @@
+:root {
+  --main-color: #F89E2C;
+  --second-color :#312617 ;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.text-main-color{
+    color: var(--main-color);
+}
+
+.bg-main-color{
+    background-color: var(--main-color);
+}
+
+.test{
+    margin-left: 20px;
+}
+
+body {
+  direction: rtl; 
+}
+
+#Contact-Us{
+    direction: ltr;
+}
+
+.contact{
+    min-height: 80vh;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+}
+
+.map{
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+.hov:hover{
+    .icon{
+        background-color: var(--main-color);
+    }
+
+    .border{
+        background-color: #cde1f8;
+    }
+
+    .iconicc{
+        color: white;
+    }
+
+}
+
+.iconicc{
+    font-size: 20px ;
+    border-width: 50px;
+    border-color: black ;
+    transition: all 1s;
+    color: var(--main-color);
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  direction: ltr;
+}
+
+.sidebar-item {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.s-face{
+     border-top-right-radius: 10px;
+      background-color: #3b5998;
+}
+
+.s-whats{
+    border-bottom-right-radius: 10px;
+     background-color: #25D366;
+}
+
+.text-big{
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.container2{
+    width: 95%;
+    margin: auto;
+}
+
+.size{
+    width: 500px;
+    height: 45px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.layer{
+    opacity: 0;
+}
+
+.t-hover:has(.sidebar-item:hover) .layer {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 2s all;
+}
+
+.bg-whats{
+     background-color: #25D366;
+}
+
+.bg-face{
+    background-color: #3b5998;
+}
+
+.text h2{
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.sizing{
+    width: 200px;
+    height: 60px;
+}
+
+.navbar{
+    height: 80px;
+}
+
+.phone{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bg-second{
+    background-color: #312617;
+}
+
+.shadow-img {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-navbar-active-color);
+     background-color: var(--main-color);
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: var(--main-color);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.carousel-item{
+    color: black;
+}
+
+button{
+    background-color: black !important;
+}
+
+#testmonial{
+    height: 70vh;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 768px){
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .home{
+        flex-direction: column;
+    }
+
+}

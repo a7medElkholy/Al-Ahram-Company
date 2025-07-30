@@ -200,6 +200,17 @@ button{
     margin-top: 50px;
 }
 
+.ham:hover{
+    opacity: 0.1;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.nav-link:hover{
+    background-color: #F89E2C;
+}
 
 @media (max-width: 768px){
 
@@ -211,4 +222,7 @@ button{
         flex-direction: column;
     }
 
+    .map iframe {
+        width: 100%;
+    }
 }

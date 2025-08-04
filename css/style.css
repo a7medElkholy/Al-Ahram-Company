@@ -255,6 +255,19 @@ html, body {
     margin-bottom: 100px;
 }
 
+.carousel-item{
+
+    p{
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    h5{
+        font-size: 40px;
+        font-weight: 800;
+    }
+}
+
 .font-p{
     font-size: 50px;
     color: white;

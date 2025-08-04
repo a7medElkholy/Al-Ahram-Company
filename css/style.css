@@ -3,6 +3,10 @@
   --second-color :#312617 ;
 }
 
+*{
+    font-family: "PT Sans Caption", sans-serif;
+}
+
 
 a{
     text-decoration: none;
@@ -210,6 +214,14 @@ button{
     opacity: 0.1;
 }
 
+.card:hover{
+    opacity: 0.1;
+}
+
+.img-wasf:hover{
+    opacity: 0.1;
+}
+
 html, body {
   overflow-x: hidden;
 }
@@ -233,6 +245,32 @@ html, body {
   color: white;
 }
 
+#karvan{
+    background-image: url(../img/water-mark.jpg);
+     background-size: cover;
+     object-fit: fill;
+}
+
+.wasf-karvan{
+    margin-bottom: 100px;
+}
+
+.font-p{
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+}
+
+.koshk-m{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.koshk-h{
+    font-size: 50px;
+    font-weight: 700;
+}
+
 .img-icon{
     padding-bottom: 100px;
 }
@@ -253,5 +291,24 @@ html, body {
 
     .img-icon{
        padding-top: 50px;
+       width: 75% !important;
+       padding-bottom: 30px;
+    }
+
+    .media{
+        flex-direction: column;
+    }
+
+    .media2{
+        flex-direction: column-reverse;
+    }
+    
+
+    .font-p{
+        font-size: 30px;
+    }
+
+    .img-wasf{
+        width: 50% !important;
     }
 }

@@ -255,6 +255,23 @@ html, body {
     margin-bottom: 100px;
 }
 
+
+.margin{
+    margin-left: 85px;
+}
+
+.a3mal{
+
+    h1{
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    p{
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
 .carousel-item{
 
     p{

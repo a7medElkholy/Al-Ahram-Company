@@ -311,6 +311,10 @@ header h3{
         color: var(--main-color);
     }
 
+    .pt-7{
+        padding-top: 80px;
+    }
+
 @media (max-width: 768px){
 
     .contact{
@@ -346,5 +350,9 @@ header h3{
 
     .img-wasf{
         width: 50% !important;
+    }
+
+    .space{
+        margin-right: 30px;
     }
 }

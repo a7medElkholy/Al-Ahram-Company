@@ -1,5 +1,5 @@
 :root {
-  --main-color: #F89E2C;
+  --main-color: #1F5FBF;
   --second-color :#312617 ;
 }
 
@@ -7,6 +7,9 @@
     font-family: "PT Sans Caption", sans-serif;
 }
 
+.text-black{
+    color: black;
+}
 
 a{
     text-decoration: none;
@@ -33,7 +36,7 @@ body {
 }
 
 .contact{
-    background-image: url(../img/back-ground.jpg);
+    background-color: var(--main-color);
     background-size: cover;
     min-height: 80vh;
     font-size: 2.5vw;
@@ -43,6 +46,10 @@ body {
 
 .w-40{
     width: 35%;
+}
+
+.w-45{
+    width: 45%;
 }
 
 .map{
@@ -70,7 +77,7 @@ body {
     border-width: 50px;
     border-color: black ;
     transition: all 1s;
-    color: var(--main-color);
+    color: black;
 }
 
 .icon {
@@ -227,23 +234,261 @@ html, body {
 }
 
 .nav-link:hover{
-    background-color: #F89E2C;
+    background-color: var(--main-color);
 }
 
 #home{
-    background-image: url(../img/back-ground.jpg);
+    /* background-image: url(../img/back-ground.jpg); */
+    background-color: black;
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.text h2{
-  font-family: "PT Sans Caption", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  font-style: normal;
-  color: white;
+.header-text{
+     font-family: "PT Sans Caption", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
 }
+
+.header-text::after{
+    content: "|";
+    animation-name: header-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+}
+
+
+ @keyframes header-animation {
+    0%{
+        content: "|";
+    }
+
+    2%{
+        content: "ش|";
+    }
+    4%{
+        content: "شر|";
+    }
+    6%{
+        content: "شرك|";
+    }
+    8%{
+        content: "شركه|";
+    }
+    9%{
+        content: "شركه |";
+    }
+    10%{
+        content: "شركه ا|";
+    }
+    12%{
+        content: "شركه ال|";
+    }
+    14%{
+        content: "شركه الا|";
+    }
+    16%{
+        content: "شركه الاه|";
+    }
+    18%{
+        content: "شركه الاهر|";
+    }
+    19%{
+        content: "شركه الاهرا|";
+    }
+    20%{
+        content: "شركه الاهرام|";
+    }
+    22%{
+        content: "شركه الاهراما|";
+    }
+    24%{
+        content: "شركه الاهرامات|";
+    }
+    25%{
+        content: "شركه الاهرامات |";
+    }
+    26%{
+        content: "شركه الاهرامات ب|";
+    }
+
+    28%{
+        content: "شركه الاهرامات با|";
+    }
+    29%{
+        content: "شركه الاهرامات بان|";
+    }
+    30%{
+        content: "شركه الاهرامات بانل|";
+    }
+    32%{
+        content: "شركه الاهرامات بان|";
+    }
+    34%{
+        content: "شركه الاهرامات با|";
+    }
+    36%{
+        content: "شركه الاهرامات ب|";
+    }
+    38%{
+        content: "شركه الاهرامات |";
+    }
+
+    39%{
+        content: "شركه الاهراما|";
+    }
+    40%{
+        content: "شركه الاهرام|";
+    }
+    42%{
+        content: "شركه الاهرا|";
+    }
+    44%{
+        content: "شركه الاهر|";
+    }
+    46%{
+        content: "شركه الاه|";
+    }
+    48%{
+        content: "شركه الا|";
+    }
+    49%{
+        content: "شركه ال|";
+    }
+    50%{
+        content: "شركه ا|";
+    }
+    52%{
+        content: "شركه |";
+    }
+    54%{
+        content: "شركه|";
+    }
+    56%{
+        content: "شرك|";
+    }
+    58%{
+        content: "شر|";
+    }
+    59%{
+        content: "ش|";
+    }
+    60%{
+        content: "|";
+    }
+    62%{
+        content: "ش|";
+    }
+    64%{
+        content: "شر|";
+    }
+    66%{
+        content: "شرك|";
+    }
+    68%{
+        content: "شركه|";
+    }
+    69%{
+        content: "شركه|";
+    }
+    70%{
+        content: "شركه ا";
+    }
+    72%{
+        content: "شركه ال|";
+    }
+    74%{
+        content: "شركه الا|";
+    }
+    76%{
+        content: "شركه الاه|";
+    }
+    78%{
+        content: "شركه الاهر|";
+    }
+    79%{
+        content: "شركه الاهرا|";
+    }
+    80%{
+        content: "شركه الاهرام|";
+    }
+    82%{
+        content: "شركه الاهراما|";
+    }
+    84%{
+        content: "شركه الاهرامات|";
+    }
+    86%{
+        content: "شركه الاهرامات |";
+    }
+    88%{
+        content: "شركه الاهرامات ب|";
+    }
+    90%{
+        content: "شركه الاهرامات با|";
+    }
+    92%{
+        content: "شركه الاهرامات بان|";
+    }
+    94%{
+        content: "شركه الاهرامات بانل|";
+    }
+    96%{
+        content: "شركه الاهرامات بانل|";
+    }
+    98%{
+        content: "شركه الاهرامات بانل |";
+    }
+    100%{
+        content: "شركه الاهرامات بانل|";
+    }
+
+    
+ }
+
+
+.hero-section {
+    height: 90vh;
+}
+
+.text-box {
+    max-width: 700px;   /* يمنع امتداد الكلام لنهاية الصفحة */
+}
+
+.text-box h2 {
+    font-size: 26px;   /* أصغر شوية */
+}
+
+.text-main-color {
+    color: #00bcd4;
+}
+
+.contact-rectangle {
+    background-color: #0d6efd; /* أزرق شيك */
+    padding: 12px 40px;
+    border-radius: 8px; /* حواف خفيفة */
+    width: fit-content;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.contact-rectangle:hover {
+    background-color: #084298;
+    transform: translateY(-3px);
+}
+
+.carousel-indicators {
+    display: none !important;
+}
+
+
+/* #testmonial .carousel-indicators {
+    display: block !important;
+} */
+
 
 #karvan{
     background-image: url(../img/water-mark.jpg);
@@ -301,9 +546,7 @@ html, body {
     font-weight: 700;
 }
 
-.img-icon{
-    padding-bottom: 100px;
-}
+
 
 header h3{
         font-size: 48px;
@@ -314,6 +557,12 @@ header h3{
     .pt-7{
         padding-top: 80px;
     }
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: none;
+}    
 
 @media (max-width: 768px){
 

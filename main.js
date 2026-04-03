@@ -9,27 +9,27 @@
 
   AOS.init();
 
- const track = document.querySelector(".track");
+//  const track = document.querySelector(".track");
 
-// نكرر المحتوى مرة واحدة
-track.innerHTML += track.innerHTML;
+// // نكرر المحتوى مرة واحدة
+// track.innerHTML += track.innerHTML;
 
-let pos = 0;
+// let pos = 0;
 
-function move() {
-  pos -= 3; // السرعة
+// function move() {
+//   pos -= 3; // السرعة
 
-  const halfWidth = track.scrollWidth / 2;
+//   const halfWidth = track.scrollWidth / 2;
 
-  // بدل ما نرجع للصفر
-  // نخصم نصف العرض (مفيش توقف)
-  if (Math.abs(pos) >= halfWidth) {
-    pos += halfWidth;
-  }
+//   // بدل ما نرجع للصفر
+//   // نخصم نصف العرض (مفيش توقف)
+//   if (Math.abs(pos) >= halfWidth) {
+//     pos += halfWidth;
+//   }
 
-  track.style.transform = `translateX(${pos}px)`;
+//   track.style.transform = `translateX(${pos}px)`;
 
-  requestAnimationFrame(move);
-}
+//   requestAnimationFrame(move);
+// }
 
-move();
+// move();

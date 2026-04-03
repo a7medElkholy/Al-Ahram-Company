@@ -9,16 +9,27 @@
 
   AOS.init();
 
+ const track = document.querySelector(".track");
 
-//   const backgrounds = [
-//     "url('img/back-ground.jpg')",
-//     "url('img/new.jpg')",
-// ];
+// نكرر المحتوى مرة واحدة
+track.innerHTML += track.innerHTML;
 
-// let index = 0;
-// const element = document.querySelector(".home");
- 
-// setInterval(() => {
-//     index = (index + 1) % backgrounds.length;
-//     element.style.backgroundImage = backgrounds[index];
-// }, 10000); // 30000 ms = 30 seconds
+let pos = 0;
+
+function move() {
+  pos -= 3; // السرعة
+
+  const halfWidth = track.scrollWidth / 2;
+
+  // بدل ما نرجع للصفر
+  // نخصم نصف العرض (مفيش توقف)
+  if (Math.abs(pos) >= halfWidth) {
+    pos += halfWidth;
+  }
+
+  track.style.transform = `translateX(${pos}px)`;
+
+  requestAnimationFrame(move);
+}
+
+move();

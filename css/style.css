@@ -256,9 +256,34 @@ html, body {
     content: "|";
     animation-name: header-animation;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation: header-animation 6s forwards;
     animation-direction:alternate ;
 }
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.slide img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+
 
 
  @keyframes header-animation {
@@ -439,12 +464,13 @@ html, body {
     96%{
         content: "شركه الاهرامات بانل|";
     }
-    98%{
-        content: "شركه الاهرامات بانل |";
-    }
-    100%{
-        content: "شركه الاهرامات بانل|";
-    }
+    94%{
+      content: "شركه الاهرامات بانل|";
+  }
+
+  100%{
+      content: "شركه الاهرامات بانل";
+  }
 
     
  }

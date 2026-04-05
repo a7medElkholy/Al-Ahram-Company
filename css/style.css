@@ -35,6 +35,12 @@ body {
     direction: ltr;
 }
 
+#footer h5,h6{
+     /* white-space: nowrap; */
+     text-align: center;
+     line-height: 1.6;
+}
+
 .contact{
     background-color: var(--main-color);
     background-size: cover;
@@ -505,7 +511,7 @@ html, body {
 }
 
 .contact-rectangle:hover {
-    background-color: #084298;
+    /* background-color: #084298; */
     transform: translateY(-3px);
 }
 

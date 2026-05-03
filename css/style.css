@@ -223,9 +223,9 @@ button{
     margin-top: 50px;
 }
 
-.ham:hover{
+/* .ham:hover{
     opacity: 0.1;
-}
+} */
 
 .card:hover{
     opacity: 0.1;
@@ -281,18 +281,32 @@ html, body {
   width: max-content;
 }
 
-#track {
+/* #track {
     .slide {
   width: 100px;
   margin-right: 20px;
+} */
+
+
+.track {
+   display: flex;
+  overflow-x: scroll; /* بدل auto */
+  gap: 20px;
+  padding: 10px;
 }
 
-.slide img {
+.track img {
+  width: 150px;
+  flex-shrink: 0;
+  
+}
+
+/* .slide img {
   width: 100%;
   height: 120px;
   object-fit: cover;
-}
-}
+} */
+
 
 
  @keyframes header-animation {
@@ -610,7 +624,7 @@ header h3{
     }
 
     .hero-section{
-        height: auto;
+        height: 200vh;
     }
 
     .track {
